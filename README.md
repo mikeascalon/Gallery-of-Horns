@@ -1,8 +1,16 @@
-# React + Vite
+# Labs 1-5
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Gallery of Horns
 
-Currently, two official plugins are available:
+This a project goals is to create an application that displays images and information of horned animals. This application will allow you to filter the images by number of horns and chose your favorite image. We create a new React application using Vite and fill it with components. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Author Michelangelo
+
+## Resources
+
+[React](https://react.dev/)
+
+### Lighthouse Accessibility Report Score
+
+![Accessibility Report](/img%20/report.png)
+
