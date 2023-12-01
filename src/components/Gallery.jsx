@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from './data.json'
 import HornedBeast from './HornedBeast';
+import Filter from './filter'
 
 
 function Gallery(props) {
@@ -13,23 +14,12 @@ function Gallery(props) {
 
     const handleHornFilter = (horns) => {
         setSelectedHorns(horns);
-    }
+    };
 
     return (
         <>
             <h2>{props.message}</h2>
-
-            <div>
-                <label>
-                    Filter by Horns:
-                    <select onChange={(e) => handleHornFilter(parseInt(e.target.value))}>
-                        <option value={null}>All</option>
-                        <option value={1}>1 Horn</option>
-                        <option value={2}>2 Horns</option>
-                        {/* Add more options for different numbers of horns */}
-                    </select>
-                </label>
-            </div>
+            <Filter onFilterChange={handleHornFilter} />
             <Container>
                 <Row xs={1} md={3}>
                     {data.filter((beast) => selectedHorns === null ? true : beast.horns === selectedHorns)
